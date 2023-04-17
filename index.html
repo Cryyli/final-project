@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5">
+        <form id="cat-food-form" class="card">
+    
+          <div class="card-header text-center">
+          <h1 class="title">Cat Food Calculator</h1>
+          </div>
+    
+          <div class="card-body row g-3">
+    
+            <!-- <div class="col-sm-4">
+              <h6 for="name">Name:</h6>
+              <input type="text" id="name" name="name" class="form-control" />
+            </div>
+            <div class="col-sm-4">
+              <h6 for="age">Age:</h6>
+              <select id="age" name="age" class="form-select">
+                <option value="">Please select an option</option>
+                <option value="senior">Senior</option>
+                <option value="adult">Adult</option>
+                <option value="kitten">Kitten</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <h6>Gender:</h6>
+              <select name="gender" class="form-select">
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </div> -->
+    
+            <div class="col-sm-12">
+              <h6 for="cat-weight">Weight:</h6>
+              <div class="d-flex align-items-center">
+              <input type="number" id="cat-weight" name="cat-weight" class="form-control text-end" />
+              <span class="btn ms-1 bg-dark text-white text-nowrap">lbs</span>
+              </div>
+            </div>
+            <!-- <div class="col-sm-6">
+              <h6>Condition:</h6>
+              <select name="condition" class="form-select">
+                <option value="">Please select an option</option>
+                <option value="neutered">Neutered</option>
+                <option value="not-neutered">Not Neutered</option>
+              </select>
+            </div> -->
+    
+            <div class="col-sm-12">
+              <h6 for="activity-level">Lifestyle:</h6>
+              <select id="activity-level" name="activity-level" class="form-select">
+                <option value="">Please select an option</option>
+                <option value="active">Active</option>
+                <option value="moderately-active">Normal</option>
+                <option value="inactive">Inactive</option>
+              </select>
+            </div>
+            <div class="col-sm-12">
+              <h6 for="meal-type">Meal Type:</h6>
+              <select id="meal-type" name="meal-type" class="form-select">
+                <option value="">Please select an option</option>
+                <option value="wet">Wet</option>
+                <option value="dry">Dry</option>
+              </select>
+            </div>
+    
+          </div>
+    
+          <div class="card-footer text-center">
+            <button class="btn btn-success" type="submit">
+              Calculate
+            </button>
+            <button class="btn" type="submit">
+              Reset
+            </button>
+          </div>
+    
+        </form>
+    
+        <div id="result" class="text-center py-3"> </div>
+    
+      </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
