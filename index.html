@@ -10,84 +10,111 @@
 </head>
 <body>
     <div class="container my-5">
+        
         <form id="cat-food-form" class="card">
     
-          <div class="card-header text-center">
+          <div class="card-header text-center py-4">
           <h1 class="title">Cat Food Calculator</h1>
           </div>
-    
+          
           <div class="card-body row g-3">
-    
-            <!-- <div class="col-sm-4">
-              <h6 for="name">Name:</h6>
-              <input type="text" id="name" name="name" class="form-control" />
+            <div class="col-lg text-center my-5">
+              <img id="cat-image" src="/assets/cats.png" alt="cat" />
             </div>
-            <div class="col-sm-4">
-              <h6 for="age">Age:</h6>
-              <select id="age" name="age" class="form-select">
-                <option value="">Please select an option</option>
-                <option value="senior">Senior</option>
-                <option value="adult">Adult</option>
-                <option value="kitten">Kitten</option>
-              </select>
-            </div>
-            <div class="col-sm-4">
-              <h6>Gender:</h6>
-              <select name="gender" class="form-select">
-                <option>Female</option>
-                <option>Male</option>
-              </select>
-            </div> -->
-    
-            <div class="col-sm-12">
-              <h6 for="cat-weight">Weight:</h6>
-              <div class="d-flex align-items-center">
-              <input type="number" id="cat-weight" name="cat-weight" class="form-control text-end" />
-              <span class="btn ms-1 bg-dark text-white text-nowrap">lbs</span>
+            <div class="col-lg">
+              <div class="col-sm-12">
+                <h6 for="name">Name:</h6>
+                <input type="text" id="name" name="name" class="form-control" />
+              </div>
+              <div class="col-sm-12 my-2">
+                <h6 for="breed">Breed:</h6>
+                <select id="breed-dropdown" name="breed" class="form-select">
+                  <option value="">Please select an option</option>
+                  <option value="abys">Abyssinian</option>
+                  <option value="aege">Aegean</option>
+                  <option value="amis">American Shorthair</option>
+                  <option value="amil">American Wirehair</option>
+                  <option value="amis">Asian</option>
+                  <option value="bali">Balinese</option>
+                  <option value="beng">Bengal</option>
+                  <option value="birm">Birman</option>
+                  <option value="bomb">Bombay</option>
+                  <option value="brit">British Shorthair</option>
+                  <option value="burm">Burmese</option>
+                  <option value="buri">Burmilla</option>
+                  <option value="cali">California Spangled</option>
+                  <option value="cali">Calico</option>
+                  <option value="chau">Chausie</option>
+                  <option value="chau">Cornish Rex</option>
+                  <option value="cymr">Cymric</option>
+                  <option value="cypr">Cyprus</option>
+                  <option value="devn">Devon Rex</option>
+                  <option value="dons">Don Sphynx</option>
+                  <option value="egyp">Egyptian Mau</option>
+                  <option value="euro">European Burmese</option>
+                  <option value="hima">Havana Brown</option>
+                  <option value="hima">Himalayan</option>
+                  <option value="japa">Japanese Bobtail</option>
+                  <option value="japa">Javanese</option>
+                </select>
+              </div>
+              <div class="col-sm-12 my-2">
+                <h6 for="cat-weight">Weight:</h6>
+                <div class="d-flex align-items-center">
+                <input type="number" id="cat-weight" name="cat-weight" class="number form-control text-end" />
+                <span class="btn ms-1 bg-dark text-white text-nowrap">lbs</span>
+                </div>
+              </div>
+              <div class="col-sm-12 my-2">
+                <h6 for="activity-level">Lifestyle:</h6>
+                <select id="activity-level" name="activity-level" class="form-select">
+                  <option value="">Please select an option</option>
+                  <option value="active">Active</option>
+                  <option value="moderately-active">Normal</option>
+                  <option value="inactive">Inactive</option>
+                </select>
+              </div>
+              <div class="col-sm-12">
+                <h6 for="meal-type">Meal Type:</h6>
+                <select id="meal-type" name="meal-type" class="form-select">
+                  <option value="">Please select an option</option>
+                  <option value="wet">Wet</option>
+                  <option value="dry">Dry</option>
+                </select>
               </div>
             </div>
-            <!-- <div class="col-sm-6">
-              <h6>Condition:</h6>
-              <select name="condition" class="form-select">
-                <option value="">Please select an option</option>
-                <option value="neutered">Neutered</option>
-                <option value="not-neutered">Not Neutered</option>
-              </select>
-            </div> -->
-    
-            <div class="col-sm-12">
-              <h6 for="activity-level">Lifestyle:</h6>
-              <select id="activity-level" name="activity-level" class="form-select">
-                <option value="">Please select an option</option>
-                <option value="active">Active</option>
-                <option value="moderately-active">Normal</option>
-                <option value="inactive">Inactive</option>
-              </select>
-            </div>
-            <div class="col-sm-12">
-              <h6 for="meal-type">Meal Type:</h6>
-              <select id="meal-type" name="meal-type" class="form-select">
-                <option value="">Please select an option</option>
-                <option value="wet">Wet</option>
-                <option value="dry">Dry</option>
-              </select>
-            </div>
-    
           </div>
-    
-          <div class="card-footer text-center">
-            <button class="btn btn-success" type="submit">
+
+          <div class="card-footer text-center py-4">
+            <button class="btn-secondary text-center" type="reset" onClick="resetForm">
+              Clear
+            </button>
+            <button class="btn btn-success text-center" type="submit">
               Calculate
             </button>
-            <button class="btn" type="submit">
-              Reset
-            </button>
           </div>
-    
-        </form>
-    
-        <div id="result" class="text-center py-3"> </div>
-    
+
+          <div id="cat-food-result" class="text-center my-5">
+            <hr/>
+          </div>
+
+        </form>    
+
+
+        <div class="py-5"> 
+          <h1>
+            Instructions
+          </h1>
+          <p>
+            Start by providing details about your cat.<br/>
+            Indicate the cat's weight based on pounds (lbs).<br/>
+            Select from the drop down the cat's lifestyle habits based on their activity level. <br/>
+            Select from the drop down the cat's meal type. <br/>
+            Click the Calculate button to see the results. <br/>
+            Click the Reset button to clear the form. <br/>
+          </p>
+        </div>
+
       </div>
 
         <script src="script.js"></script>
