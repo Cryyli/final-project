@@ -11,17 +11,19 @@
 <body>
     <div class="container my-5">
         
-        <form id="cat-food-form" class="card">
+        <div class="card">
     
           <div class="card-header text-center py-4">
           <h1 class="title">Cat Food Calculator</h1>
           </div>
           
           <div class="card-body row g-3">
+
             <div class="col-lg text-center my-5">
               <img id="cat-image" src="./assets/cats.png" alt="cat" />
             </div>
-            <div id="cat-food-result" class="col-lg">
+
+            <form id="cat-food-form" class="col-lg">
               <div class="col-sm-12">
                 <h6 for="name">Name:</h6>
                 <input type="text" id="name" name="name" class="form-control" />
@@ -82,17 +84,21 @@
                   <option value="dry">Dry</option>
                 </select>
               </div>
-            </div>
+            </form>
+            
+            <div id="cat-food-result" class="text-center"></div>
+
+
           </div>
 
           <div class="card-footer text-center py-4">
-            <button class="btn btn-success text-center" type="submit">
+            <button id="reset-btn" class="btn text-center" type="reset">Reset</button>
+            <button id="submit-btn" class="btn btn-success text-center" type="submit">
               Calculate
             </button>
           </div>
 
-        </form>    
-
+        </div>    
 
         <div class="py-5"> 
           <h1>
