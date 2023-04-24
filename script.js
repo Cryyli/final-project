@@ -86,6 +86,6 @@ function calculateCatFoodAmount(weight, activityLevel, mealType) {
     // clear result message
     resultContainer.innerHTML = '';
     resultContainer.style.display = 'none';
-    form.reset();
     form.style.display = 'block';
+    form.reset();
   });
