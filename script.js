@@ -69,6 +69,6 @@ function calculateCatFoodAmount(weight, activityLevel, mealType) {
     const foodAmount = calculateCatFoodAmount(weight, activityLevel, mealType);
     const name = form.elements['name'].value;
     
-    resultMessage.innerHTML = `<div class="my-5 py-5"> Hi, I am <strong>${name}</strong>.I weigh <div class="number number-style">${weight} lbs</div> and live a <strong>${activityLevel}</strong> lifestyle.Because I eat <strong>${mealType}</strong> food, I should eat <div class="number number-style">${foodAmount}</div> cups of food per day.</div>`;
+    resultMessage.innerHTML = `<div class="my-5 py-5"> Hi, I am <strong>${name}</strong>.<br/> I weigh <div class="number number-style">${weight} lbs</div> and live a <strong>${activityLevel}</strong> lifestyle.<br/> Because I eat <strong>${mealType}</strong> food, I should eat <div class="number number-style">${foodAmount}</div> cups of food per day.</div>`;
     resultMessage.style.display = 'block';
   });
